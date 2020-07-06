@@ -69,11 +69,11 @@ prepare() {
 
 package() {
     cd "$srcdir"
-    mkdir -p "$pkgdir"/usr/share/deezer
-    mkdir -p "$pkgdir"/usr/share/applications
-    mkdir -p "$pkgdir"/usr/bin/
+    sudo mkdir -p "$pkgdir"/usr/share/deezer
+    sudo mkdir -p "$pkgdir"/usr/share/applications
+    sudo mkdir -p "$pkgdir"/usr/bin/
     for size in 16 32 48 64 128 256 512; do
-        mkdir -p "$pkgdir"/usr/share/icons/hicolor/${size}x${size}/apps/
+        sudo mkdir -p "$pkgdir"/usr/share/icons/hicolor/${size}x${size}/apps/
     done
 
     sudo install -Dm644 resources/app.asar "$pkgdir"/usr/share/deezer/
