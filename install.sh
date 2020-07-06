@@ -87,7 +87,7 @@ package() {
     sudo install -Dm755 deezer "$pkgdir"/usr/bin/
 
     # Make sure the deezer:// protocol handler is immediately registered as it's needed for login 
-    update-desktop-database --quiet
+    sudo update-desktop-database --quiet
 }
 
 install_dependencies && prepare && package
