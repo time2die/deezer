@@ -1,4 +1,4 @@
-# Deezer Ubuntu build script
+# Deezer Void Linux build script
 
 ![Screenshot of Deezer Desktop running on Kubuntu with the media player integration visible](screenshot.png)
 
