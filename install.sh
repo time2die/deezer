@@ -3,7 +3,7 @@
 # Maintainer: Sibren Vasse <arch@sibrenvasse.nl>
 # Contributor: Ilya Gulya <ilyagulya@gmail.com>
 pkgname="deezer"
-pkgver=5.20.0
+pkgver=5.30.0
 srcdir="$PWD"
 
 install_dependencies() {
@@ -49,10 +49,10 @@ prepare() {
     done
 
     cd "$srcdir/resources/app"
+    mkdir -p resources/linux/
+    install -Dm644 "$srcdir/resources/win/systray.png" resources/linux/
 
     prettier --write "build/*.js"
-    # Disable menu bar
-    patch -p1 < "$srcdir/menu-bar.patch"
     # Hide to tray (https://github.com/SibrenVasse/deezer/issues/4)
     patch -p1 < "$srcdir/quit.patch"
 
