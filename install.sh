@@ -32,7 +32,6 @@ prepare() {
     asar extract app.asar app
 
     mkdir -p app/resources/linux/
-    cp win/systray.png app/resources/linux/systray.png
 
     # Remove NodeRT from package (-205.72 MiB)
     rm -r app/node_modules/@nodert
