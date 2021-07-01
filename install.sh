@@ -56,9 +56,6 @@ prepare() {
     # Hide to tray (https://github.com/SibrenVasse/deezer/issues/4)
     patch -p1 < "$srcdir/quit.patch"
 
-    # Monkeypatch MPRIS D-Bus interface
-    patch -p1 < "$srcdir/0001-MPRIS-interface.patch"
-
     cd ..
     asar pack app app.asar
 }
