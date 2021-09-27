@@ -54,6 +54,8 @@ prepare() {
     prettier --write "build/*.js"
     # Hide to tray (https://github.com/SibrenVasse/deezer/issues/4)
     patch -p1 < "$srcdir/quit.patch"
+    # Add start in tray cli option (https://github.com/SibrenVasse/deezer/pull/12)
+    patch --forward --strip=1 --input="$srcdir/start-hidden-on-tray.patch"
 
     cd ..
     asar pack app app.asar
