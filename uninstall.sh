@@ -1,6 +1,6 @@
 #!/bin/bash
 
-printf "\nPlease enter with your root password to proceed.\n"
+printf "\nPlease enter your root password to proceed.\n"
 sudo true
 
 printf "\nUninstalling Deezer... "
