@@ -42,6 +42,17 @@ chmod +x ./uninstall.sh
 ./uninstall.sh
 ```
 
+## Updating
+
+```bash
+# Open the folder where you cloned this repo
+cd deezer
+# Pull the latest version
+git pull
+chmod +x ./install.sh
+./install.sh
+```
+
 ## Debugging
 
 Running the application from the command line will show verbose logging.
