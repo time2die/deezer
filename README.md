@@ -33,6 +33,15 @@ chmod +x ./install.sh
 
 The Deezer Windows installer will then be downloaded, extracted and patched to work for Linux. When prompted for your sudo password, please enter it.
 
+## Uninstalling
+
+You can uninstall Deezer by running `uninstall.sh`:
+
+```bash
+chmod +x ./uninstall.sh
+./uninstall.sh
+```
+
 ## Debugging
 
 Running the application from the command line will show verbose logging.
