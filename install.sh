@@ -3,7 +3,7 @@
 # Maintainer: Sibren Vasse <arch@sibrenvasse.nl>
 # Contributor: Ilya Gulya <ilyagulya@gmail.com>
 pkgname="deezer"
-pkgver=5.30.0
+pkgver=5.30.10
 srcdir="$PWD"
 
 install_dependencies() {
