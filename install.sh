@@ -11,7 +11,7 @@ install_dependencies() {
     # is older than 10.13.0 which prettier requires.
     curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
     sudo apt install p7zip-full imagemagick nodejs wget g++ make
-    sudo npm install -g electron@^6 --unsafe-perm=true
+    sudo npm install -g electron@^13 --unsafe-perm=true
     sudo npm install -g --engine-strict asar
     sudo npm install -g prettier
 }
