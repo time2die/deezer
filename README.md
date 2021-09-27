@@ -12,6 +12,14 @@ This package applies several patches for:
 - Compatibility with a Linux environment in general.
 - Fixing bugs
 
+## Options
+
+You can start Deezer minimized on the tray using the `--start-in-tray` flag;
+
+```bash
+deezer --start-in-tray
+```
+
 ## Building
 
 To install on Ubuntu:
